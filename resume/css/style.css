@@ -1,0 +1,205 @@
+@import url("https://fonts.googleapis.com/css?family=Cabin|Domine|Libre+Caslon+Display|Playfair+Display|Prompt|Raleway|Roboto&display=swap");
+
+/* font-family: 'Roboto', sans-serif;
+font-family: 'Raleway', sans-serif;
+font-family: 'Playfair Display', serif;
+font-family: 'Cabin', sans-serif;
+font-family: 'Domine', serif;
+font-family: 'Prompt', sans-serif;
+font-family: 'Libre Caslon Display', serif; */
+
+/* Ol’ trusty blue:rgba(54, 140, 191, 1);
+Accent color green: rgba(126, 188, 89, 1);
+Dark Slate: rgba(51, 54, 59, 1);
+Light grey: rgba(234, 234, 234, 1);
+*/
+* {
+  font-family: "Cabin", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  line-height: 2;
+  text-decoration: none;
+}
+
+body {
+  background-image: linear-gradient(
+    to bottom right,
+    rgba(255, 255, 255, 1),
+    rgba(54, 140, 191, 0.5)
+  );
+  /* background-image: url('/img/bg.jpg'); */
+  background-size: cover;
+  background-position: center;
+}
+
+.page-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+li,
+p {
+  font-size: 14px;
+}
+h3,
+h4 {
+  color: rgba(51, 54, 59, 1);
+}
+h3 {
+  text-transform: uppercase;
+}
+header ul {
+  display: flex;
+  justify-content: center;
+}
+
+header li {
+  padding: 1.5em;
+  list-style: none;
+}
+a {
+  color: rgba(51, 54, 59, 1);
+  text-decoration: none;
+  transition: 0.2s ease-in-out;
+  font-size: 16px;
+}
+header a:hover {
+  color: rgba(126, 188, 89, 1);
+}
+.header-content h1 {
+  color: rgba(58, 70, 96, 1);
+  letter-spacing: 1px;
+  padding-bottom: 0.8em;
+  text-transform: uppercase;
+}
+.header-content h2 {
+  font-size: 1em;
+  color: white;
+}
+
+.header-content {
+  padding-top: 2em;
+  background: rgba(54, 140, 191, 0.8);
+  box-shadow: 0.5px 0.5px 7px 0.5px rgba(58, 70, 96, 1);
+  width: 300px;
+}
+
+.header-content .image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.header-content .image {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  background-image: url("../img/resume-pic.jpeg");
+  align-self: center;
+  background-position: top;
+  background-size: cover;
+}
+
+.image-container-content {
+  text-align: center;
+  padding: 2em;
+}
+
+.icons {
+  display: inline-block;
+  grid-row: 3/4;
+  background: white;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-content .fab {
+  margin: 1em;
+  font-size: 1.7em;
+  color: rgba(58, 70, 96, 1);
+  transition: 0.2s ease-in-out;
+}
+.header-content .fab:hover {
+  color: rgba(126, 188, 89, 1);
+}
+
+.line {
+  width: 220px;
+  height: 1px;
+  background: rgba(126, 188, 89, 1);
+  margin-bottom: 1em;
+}
+
+th {
+  text-align: left;
+  width: 100px;
+  font-size: 12px;
+}
+
+th a {
+  font-size: 12px;
+}
+
+.section-a,
+.section-b,
+.section-c,
+.section-d {
+  padding-top: 1em;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+.resume {
+  padding: 2.3em;
+  box-shadow: 0.5px 0.5px 7px 0.5px rgba(58, 70, 96, 1);
+  margin: 2em;
+  background: white;
+}
+
+@media (min-width: 1024px) {
+  .page-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: ;
+  }
+  .header-content {
+    width: 300px;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    align-self: flex-start;
+    justify-self: center;
+  }
+  .resume {
+    margin-top: 0;
+    grid-column: 2/4;
+    grid-row: 1/2;
+    justify-self: start;
+    margin: 0;
+    margin-right: 3em;
+    margin-bottom: 2em;
+  }
+
+  .objective a {
+    text-decoration: none;
+  }
+
+  .resume {
+    grid-gap: 1em;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .section-a,
+  .section-b,
+  .section-c,
+  .section-d {
+    padding-top: 0;
+  }
+}
