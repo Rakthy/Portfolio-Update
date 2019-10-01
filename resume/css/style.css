@@ -97,9 +97,9 @@ header a:hover {
   width: 160px;
   height: 160px;
   border-radius: 50%;
-  background-image: url("../img/resume-pic.jpeg");
+  background-image: url("../img/resume-pic.jpg");
   align-self: center;
-  background-position: top;
+  background-position: center;
   background-size: cover;
 }
 
